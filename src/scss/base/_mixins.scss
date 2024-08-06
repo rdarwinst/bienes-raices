@@ -32,3 +32,24 @@
     grid-template-columns: repeat($columnas, 1fr);
     gap: $espaciado;
 }
+@mixin resetearLista {
+    list-style: none;
+    padding: 0; 
+    margin: 0;
+}
+
+@mixin boton($bgColor, $display: inline-block) {
+    background-color: $bgColor;
+    color: v.$blanco;
+    font-weight: v.$bold;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    text-align: center;
+    margin-top: calc(v.$separacion / 2);
+    display: $display;
+    transition: background-color .3s ease;
+
+    &:hover {
+        background-color: darken($bgColor, 5);
+    }
+}

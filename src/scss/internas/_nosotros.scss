@@ -1,0 +1,31 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contenido-nosotros {
+    @include m.tablet {
+        @include m.grid(2, 2rem);
+    }
+
+    img {
+        height: 55rem;
+        width: 100%;
+        object-fit: cover;
+    }
+    blockquote {
+        margin: 2rem 0 0 0;
+        font-weight: v.$bold;
+        font-size: 2.2rem;
+
+        @include m.tablet {
+            margin: 0;
+        }
+    }
+    p {
+        margin: 1rem 0 0 0;
+        text-align: justify;
+
+        &:last-of-type {            
+            margin: 0;
+        }
+    }
+}
