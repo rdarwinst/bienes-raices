@@ -1,42 +1,10 @@
-<!DOCTYPE html>
-<html lang="es">
+<?php
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preload" href="build/css/app.css" as="style">
-    <link rel="stylesheet" href="build/css/app.css">
-    <title>Bienes Raices</title>
-</head>
-
-<body>
-
-    <header class="header inicio">
-        <div class="contenedor contenido-header">
-            <div class="barra">
-                <a href="/">
-                    <img src="build/img/logo.svg" alt="Logotipo del sitio">
-                </a>
-
-                <div class="mobile-menu">
-                    <img src="build/img/barras.svg" alt="Icono Menú Responsive">
-                </div>
-
-                <div class="derecha">
-                    <img src="build/img/dark-mode.svg" alt="Icono Dark Mode" class="dark-mode-boton">
-                    <nav class="navegacion">
-                        <a href="nosotros.html">Nosotros</a>
-                        <a href="anuncios.html">Anuncios</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="contacto.html">Contacto</a>
-                    </nav>
-                </div>
-            </div><!-- .barra -->
-            <h1>Venta de casas y departamentos exclusivos de lujo</h1>
-        </div>
-    </header>
-
-    <main class="contenedor">
+    declare(strict_types = 1);
+    require 'includes/funciones.php';
+    incluirTemplate('header', $inicio = true);
+?>
+<main class="contenedor">
         <h1>Más Sobre Nosotros</h1>
 
         <div class="iconos-nosotros">
@@ -228,19 +196,6 @@
         </section>
     </div>
 
-    <footer class="footer seccion">
-        <div class="contenedor contenedor-footer">
-            <nav class="navegacion">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">Anuncios</a>
-                <a href="blog.html">Blog</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
-        </div><!-- .contenedor-footer -->
-        <p class="copyright">Todos los derechos reservados. 2024 &copy;</p>
-    </footer>
-
-    <script src="build/js/bundle.min.js"></script>
-</body>
-
-</html>
+<?php
+    incluirTemplate('footer');
+?>
