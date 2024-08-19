@@ -23,6 +23,13 @@
     }
 
 }
+.informacion-meta {
+    
+    span {
+        color: v.$amarillo;
+    }
+
+}
 
 .texto-entrada {
     a {
@@ -46,10 +53,6 @@
             margin-top: 1rem;
         }
     }
-    span {
-        color: v.$amarillo;
-    }
-
     p {
         text-align: justify;
     }

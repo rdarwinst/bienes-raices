@@ -10,10 +10,15 @@
 .anuncio {
     background-color: lighten(v.$gris, 5);
     border: 1px solid darken(v.$gris, 10);
-    transition: transform .3s ease-in-out;
+    margin-bottom: 2rem;
+    @include m.tablet {
+        transition: transform .3s ease-in-out;
+    }
 
-    &:hover {
-        transform: scale(1.1);
+    @include m.tablet {
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 
     .contenido-anuncio {
@@ -26,11 +31,20 @@
     h3 {
         text-transform: capitalize;
     }
+}
+.precio {
+    color: v.$verde;
+    font-weight: v.$bold;
+    font-size: 3rem;
+}
 
-    .precio {
-        color: v.$verde;
-        font-weight: v.$bold;
-        font-size: 3rem;
+.imagen-anuncio img {
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+
+    @include m.tablet {
+        height: 60rem;
     }
 }
 
@@ -38,6 +52,7 @@
     @include m.resetearLista;
     display: flex;
     padding: 0;
+    max-width: 40rem;
 
     li {
         flex: 1;

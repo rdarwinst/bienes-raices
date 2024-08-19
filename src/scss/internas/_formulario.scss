@@ -1,0 +1,66 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.no-webp .imagen-formulario {
+    background-image: url(../img/destacada3.jpg);
+}
+
+.webp .imagen-formulario {
+    background-image: url(../img/destacada3.webp);
+}
+.imagen-formulario {
+    margin-top: 5rem;
+    height: 35rem;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.formulario {
+    margin-inline: auto;
+
+    p {
+        font-size: 1.4rem;
+        color: v.$grisOscuro;
+        margin: 2rem 0 0 0;
+    }
+
+    fieldset {
+        border: 1px solid v.$negro;
+        margin-bottom: 2rem;
+    }
+
+    legend {
+        background-color: v.$verde;
+        width: 100%;
+        text-align: center;
+        padding: .5rem;
+        font-size: 2rem;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        font-weight: v.$black;
+        color: v.$blanco;
+    }
+
+    label {
+        font-weight: v.$bold;
+        text-transform: uppercase;
+        display: block;
+    }
+
+    input:not([type="radio"]):not([type="submit"]), textarea, select {
+        padding: 1rem;
+        display: block;
+        width: 100%;
+        background-color: v.$blanco;
+        border: 1px solid v.$gris;
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .forma-contacto {
+        max-width: 35rem;
+        display: flex;
+        justify-content: space-between;
+    }
+}

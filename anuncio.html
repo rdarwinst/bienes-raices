@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="build/css/app.css" as="style">
+    <link rel="stylesheet" href="build/css/app.css">
+    <title>Bienes Raices</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="/">
+                    <img src="build/img/logo.svg" alt="Logotipo del sitio">
+                </a>
+
+                <div class="mobile-menu">
+                    <img src="build/img/barras.svg" alt="Icono Menú Responsive">
+                </div>
+                
+                <div class="derecha">
+                    <img src="build/img/dark-mode.svg" alt="Icono Dark Mode" class="dark-mode-boton">
+                    <nav class="navegacion">
+                        <a href="nosotros.html">Nosotros</a>
+                        <a href="anuncios.html">Anuncios</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="contacto.html">Contacto</a>
+                    </nav>
+                </div>
+            </div><!-- .barra -->
+        </div>
+    </header>
+
+    <main class="contenedor seccion contenido-centrado">
+        <h1>Casa en venta frente al bosque</h1>
+        <picture class="imagen-anuncio">
+            <source srcset="build/img/destacada.avif" type="image/avif">
+            <source srcset="build/img/destacada.webp" type="image/webp">
+            <source srcset="build/img/destacada.jpg" type="image/jpeg">
+            <img loading="lazy" width="200" height="auto" src="build/img/destacada.jpg" alt="Imagen de la Propiedad">
+        </picture>
+        <div class="resumen-propiedad">
+            <p class="precio">$145.000.000</p>
+            <ul class="iconos-caracteristicas">
+                <li>
+                    <img loading="lazy" src="build/img/icono_wc.svg" alt="Icono WC">
+                    <p>3</p>
+                </li>
+                <li>
+                    <img loading="lazy" src="build/img/icono_estacionamiento.svg" alt="Icono Estacionamiento">
+                    <p>3</p>
+                </li>
+                <li>
+                    <img loading="lazy" src="build/img/icono_dormitorio.svg" alt="Icono Habitaciones">
+                    <p>4</p>
+                </li>
+            </ul>
+            <p>Every day is taco ipsum tuesday. It’s taco time all the time. Tacos, tacos, tacos. Can you put some peppers and onions on that? Does guac cost extra? CARNITAS!! BARBACOA!! Tacos al pastor made with adobada meat. Say taco one more time. Side of rice and beans, please. Um, Tabasco? No thanks, do you have any Cholula? BARBACOA!! 50 cent tacos! I’ll take 30. Say taco one more time. These tacos are lit 🔥. BARBACOA!! 50 cent tacos! I’ll take 30. I’ve been following that taco truck around all day. Tacos, tacos, tacos.</p>
+            <p>Tacos Al pastor/De Adobada are made of thin pork steaks seasoned with adobo seasoning, then skewered and overlapped on one another on a vertical rotisserie cooked and flame-broiled as it spins. Burritos are very tasty. Yeah, apparently the taco shack was robbed. They left the money but took the tacos.</p>
+        </div>
+    </main>
+
+    <footer class="footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="anuncios.html">Anuncios</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div><!-- .contenedor-footer -->
+        <p class="copyright">Todos los derechos reservados. 2024 &copy;</p>
+    </footer>
+
+    <script src="build/js/bundle.min.js"></script>
+</body>
+</html>

@@ -19,12 +19,12 @@
         background-repeat: no-repeat;
 
         @include m.tablet {
-            min-height: 70rem;
+            min-height: 100vh;
         }
 
         .contenido-header {
             @include m.tablet {
-                min-height: 70rem;
+                min-height: 100vh;
             }
         }
         

@@ -15,7 +15,7 @@ body {
 }
 p {
     color: v.$negro;
-    font-size: 2rem;
+    font-size: clamp(2rem, 4vw, 2.2rem);
 }
 .contenedor {
     @include m.contenedor;
@@ -40,14 +40,14 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 3.8rem;
+    font-size: clamp(3rem, 4vw, 3.8rem);
 }
 h2 {
-    font-size: 3.4rem;
+    font-size: clamp(2.8rem, 4vw, 3.4rem);
 }
 h3 {
-    font-size: 3rem;
+    font-size: clamp(2.6rem, 4vw, 3rem);
 }
 h4 {
-    font-size: 2.6rem;
+    font-size: clamp(2rem, 4vw, 2.6rem);
 }
